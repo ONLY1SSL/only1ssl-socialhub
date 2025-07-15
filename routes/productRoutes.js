@@ -6,7 +6,7 @@ const Product = require('../models/product');
 // Get all available products
 router.get('/', async (req, res) => {
   try {
-    const products = await product.find({ available: true });
+    const products = await Product.find({ available: true });
     res.json(products);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch products' });
