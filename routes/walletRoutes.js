@@ -1,8 +1,8 @@
 // routes/walletRoutes.js
 const express = require('express');
 const router = express.Router();
-const wallet = require('../models/wallet');
-const product = require('../models/product');
+const Wallet = require('../models/wallet');
+const Product = require('../models/product');
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
